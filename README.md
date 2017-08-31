@@ -14,6 +14,13 @@
     * e.g. `callback({"ip":"98.207.254.136"});`
   * **jsonp**
     * e.g. `getip({"ip":"98.207.254.136"});`
+* Exit Codes
+  * `0`
+    * Successful operation
+  * `1`
+    * Invalid or Missing Arguments
+  * `2`
+    * Connection Issues
 
 # Getting Started
 
@@ -25,6 +32,8 @@ $ get_ip -h
 
 # Usage
 
+## Proper Usage
+
 ```bash
 COMMAND            TYPE  OUTPUT
 ipify -h, --help   text  This help message
@@ -33,6 +42,8 @@ ipify -j, --json   json  {"ip":"98.207.254.136"}
 ipify -J, --jsonp  jsonp callback({"ip":"98.207.254.136"});
 ipify -G, --get-ip jsonp getip({"ip":"98.207.254.136"});
 ```
+
+### Importing Library
 
 You can source the script to anywhere and use its function to get the Public IP.
 Put the following line at the beginning of your script. Of course replace the path with the right one first.
