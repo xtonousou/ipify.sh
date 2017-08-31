@@ -1,15 +1,16 @@
 #!/usr/bin/env bash
 # Author .......: Sotirios M. Roussis (xtonousou) <xtonousou@gmail.com>
 # Description ..: Unofficial client library for ipify: A Simple IP Address API.
-# Exit Values ..: {"0": "successful", "1": "no args", "2": "connection issues"}
+# Exit Values ..: {"0": "successful", "1": "arg issues", "2": "connection issues"}
 # Dependencies .: bash>=3.2, coreutils, curl
 # Linter .......: shellcheck
-# Date .........: 20170831
+# Date .........: Thu Aug 31 09:57:41 EEST 2017
 
 function get_ip() {
   function help() {
-    printf "%s%16s%8s\n%s%7s%16s\n%s%7s%25s\n%s%7s%35s\n%s%6s%32s" \
+    printf "%s%16s%8s\n%s%7s%19s\n%s%7s%16s\n%s%7s%25s\n%s%7s%35s\n%s%6s%32s" \
       "COMMAND" "TYPE" "OUTPUT" \
+      "ipify -h, --help" "text" "This help message" \
       "ipify -t, --text" "text" "98.207.254.136" \
       "ipify -j, --json" "json" "{\"ip\":\"98.207.254.136\"}" \
       "ipify -J, --jsonp" "jsonp" "callback({\"ip\":\"98.207.254.136\"});" \
@@ -24,6 +25,9 @@ function get_ip() {
   declare RESPONSE
 
   case "${1}" in
+    "-h"|"--help")
+      help && return 0
+    ;;
     "-t"|"--text")
       API_URI="https://api.ipify.org"
     ;;
@@ -35,6 +39,9 @@ function get_ip() {
     ;;
     "-G"|"--get-ip")
       API_URI="https://api.ipify.org?format=jsonp&callback=getip"
+    ;;
+    *)
+      help && return 1
     ;;
   esac
 
