@@ -35,7 +35,11 @@ $ get_ip -h
 ## Proper Usage
 
 ```bash
+<<<<<<< HEAD
 COMMAND             TYPE  OUTPUT
+=======
+COMMAND            TYPE  OUTPUT
+>>>>>>> e8e927b85f808776c2404b5b4e1dfd5c87acacb9
 get_ip -h, --help   text  This help message
 get_ip -t, --text   text  98.207.254.136
 get_ip -j, --json   json  {"ip":"98.207.254.136"}
