@@ -16,7 +16,7 @@
     * e.g. `getip({"ip":"98.207.254.136"});`
 * Exit Codes
   * `0`
-    * Successful operation
+    * Successful Operation
   * `1`
     * Invalid or Missing Arguments
   * `2`
@@ -25,9 +25,15 @@
 # Getting Started
 
 ```bash
-$ wget https://github.com/xtonousou/ipify.sh/blob/master/ipify.sh
+$ curl -O https://raw.githubusercontent.com/xtonousou/ipify.sh/master/ipify.sh
 $ source ipify.sh
 $ get_ip -h
+```
+
+or
+
+```bash
+$ source <(curl https://raw.githubusercontent.com/xtonousou/ipify.sh/master/ipify.sh)
 ```
 
 # Usage
@@ -35,11 +41,7 @@ $ get_ip -h
 ## Proper Usage
 
 ```bash
-<<<<<<< HEAD
 COMMAND             TYPE  OUTPUT
-=======
-COMMAND            TYPE  OUTPUT
->>>>>>> e8e927b85f808776c2404b5b4e1dfd5c87acacb9
 get_ip -h, --help   text  This help message
 get_ip -t, --text   text  98.207.254.136
 get_ip -j, --json   json  {"ip":"98.207.254.136"}
@@ -54,6 +56,12 @@ Put the following line at the beginning of your script. Of course replace the pa
 
 ```bash
 source /path/to/ipify.sh
+```
+
+or
+
+```bash
+. /path/to/ipify.sh
 ```
 
 # More Like This
