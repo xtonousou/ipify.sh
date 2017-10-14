@@ -36,11 +36,11 @@ $ get_ip -h
 
 ```bash
 COMMAND            TYPE  OUTPUT
-ipify -h, --help   text  This help message
-ipify -t, --text   text  98.207.254.136
-ipify -j, --json   json  {"ip":"98.207.254.136"}
-ipify -J, --jsonp  jsonp callback({"ip":"98.207.254.136"});
-ipify -G, --get-ip jsonp getip({"ip":"98.207.254.136"});
+get_ip -h, --help   text  This help message
+get_ip -t, --text   text  98.207.254.136
+get_ip -j, --json   json  {"ip":"98.207.254.136"}
+get_ip -J, --jsonp  jsonp callback({"ip":"98.207.254.136"});
+get_ip -g, --get-ip jsonp getip({"ip":"98.207.254.136"});
 ```
 
 ### Importing Library
