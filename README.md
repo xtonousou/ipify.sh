@@ -33,7 +33,7 @@ $ get_ip -h
 or
 
 ```bash
-$ source <(curl https://raw.githubusercontent.com/xtonousou/ipify.sh/master/ipify.sh)
+$ source <(curl -s https://raw.githubusercontent.com/xtonousou/ipify.sh/master/ipify.sh) && get_ip -h
 ```
 
 # Usage
