@@ -14,7 +14,7 @@ get_ip() {
 
   help() {
     "${PRINTF}" \
-      "%s%16s%8s\n%s%7s%19s\n%s%7s%16s\n%s%7s%25s\n%s%7s%35s\n%s%6s%32s\n" \
+      "%s%17s%8s\n%s%7s%19s\n%s%7s%16s\n%s%7s%25s\n%s%7s%35s\n%s%6s%32s\n" \
       "COMMAND" "TYPE" "OUTPUT" \
       "get_ip -h, --help" "text" "This help message" \
       "get_ip -t, --text" "text" "98.207.254.136" \
