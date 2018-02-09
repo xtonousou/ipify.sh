@@ -1,4 +1,6 @@
 # ipify.sh
+[![FOSSA Status](https://app.fossa.io/api/projects/git%2Bgithub.com%2Fxtonousou%2Fipify.sh.svg?type=shield)](https://app.fossa.io/projects/git%2Bgithub.com%2Fxtonousou%2Fipify.sh?ref=badge_shield)
+
 
 > Unofficial client library for [ipify](https://www.ipify.org): A Simple IP Address API.
 
@@ -71,3 +73,6 @@ or
 # License
 
 MIT © [Sotirios M. Roussis (xtonousou)](https://xtonousou.github.io)
+
+
+[![FOSSA Status](https://app.fossa.io/api/projects/git%2Bgithub.com%2Fxtonousou%2Fipify.sh.svg?type=large)](https://app.fossa.io/projects/git%2Bgithub.com%2Fxtonousou%2Fipify.sh?ref=badge_large)
