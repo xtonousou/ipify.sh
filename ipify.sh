@@ -24,7 +24,7 @@ get_ip() {
 
     return 0
   }
-  
+
   [ "${#}" -eq 0 ] && help && return 1
 
   declare CURL
